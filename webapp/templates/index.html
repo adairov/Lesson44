@@ -8,6 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-        <h1>Bulls and cows game</h1>
+    <h1>Bulls and cows game</h1>
+    <form action="/" method="post">
+    {% csrf_token %}
+    <label>First number:</label><br/>
+    <input type="number" name="first_number"/><br/>
+    <label>Second number:</label><br/>
+    <input type="number" name="second_number"/><br/>
+    <label>Third number:</label><br/>
+    <input type="number" name="third_number"/><br/>
+    <label>Forth number:</label><br/>
+    <input type="number" name="forth_number"/><br/>
+    <br/>
+    <input type="submit" value="Send"/>
+    </form>
+    <br/>
+    <a href="results/">Go to Results page</a>
 </body>
 </html>
